@@ -1,0 +1,22 @@
+{
+    "pulldown": true,
+    "hold_mouse_down": true,
+    "toggle_key": "`",
+    "clicks_per_second": 100,
+    "primary_pulldown_rate": 1.25,
+    "secondary_pulldown_rate": 0.22,
+    "configs": {
+        "f1": 10,
+        "f2": 2.4,
+        "f3": 0.05,
+        "f4": 0.4,
+        "f5": 0.5,
+        "f6": 0.6,
+        "f7": 0.7,
+        "f8": 0.8,
+        "f9": 0.9,
+        "f10": 1.0,
+        "f11": 1.1,
+        "f12": 1.2
+    }
+}
