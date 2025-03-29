@@ -11,7 +11,7 @@ except ImportError:
 finally:
     os.system("installer.bat")
     
-os.system("")
+os.system("cls")
 
 
 class Main(Controller):
